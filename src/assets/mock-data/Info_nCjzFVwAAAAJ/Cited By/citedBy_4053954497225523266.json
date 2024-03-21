@@ -1,0 +1,51 @@
+{
+"search_metadata": {
+"id": "65fbc1d6303eb11e1a0443ba",
+"status": "Success",
+"json_endpoint": "https://serpapi.com/searches/3a447f586aeb2a43/65fbc1d6303eb11e1a0443ba.json",
+"created_at": "2024-03-21 05:12:54 UTC",
+"processed_at": "2024-03-21 05:12:54 UTC",
+"google_scholar_url": "https://scholar.google.com/scholar?cites=4053954497225523266&hl=en&scipsc=1",
+"raw_html_file": "https://serpapi.com/searches/3a447f586aeb2a43/65fbc1d6303eb11e1a0443ba.html",
+"total_time_taken": 3.64
+},
+"search_parameters": {
+"engine": "google_scholar",
+"cites": "4053954497225523266",
+"hl": "en"
+},
+"search_information": {
+"organic_results_state": "Results for exact spelling",
+"total_results": 1,
+"time_taken_displayed": 0.01
+},
+"profiles": {
+"link": "https://scholar.google.com/scholar?cluster=4053954497225523266&hl=en&as_sdt=5,37&sciodt=0,37",
+"serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en"
+},
+"organic_results": [
+{
+"position": 0,
+"title": "Cellular Network Coverage Hole Detection and Diagnosis Method Using WaveCluster",
+"result_id": "unW7mUrAPRYJ",
+"link": "https://link.springer.com/chapter/10.1007/978-981-19-9968-0_121",
+"snippet": "Cellular network coverage is a key factor to significantly impact the user experience, therefore, it is of vital importance to telecom operators. However, there exists a series of …",
+"publication_info": {
+"summary": "Z Yang, L Xu, F Lyu, L Liu, J Zhu, K Chao… - … Conference On Signal …, 2022 - Springer",
+"authors": [
+{
+"name": "L Xu",
+"link": "https://scholar.google.com/citations?user=ZJwwGMAAAAAJ&hl=en&oi=sra",
+"serpapi_scholar_link": "https://serpapi.com/search.json?author_id=ZJwwGMAAAAAJ&engine=google_scholar_author&hl=en",
+"author_id": "ZJwwGMAAAAAJ"
+}
+]
+},
+"inline_links": {
+"serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=unW7mUrAPRYJ",
+"related_pages_link": "https://scholar.google.com/scholar?q=related:unW7mUrAPRYJ:scholar.google.com/&scioq=&hl=en&as_sdt=5,37&sciodt=0,37",
+"serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=5%2C37&cites=4053954497225523266&engine=google_scholar&hl=en&q=related%3AunW7mUrAPRYJ%3Ascholar.google.com%2F"
+}
+}
+]
+}

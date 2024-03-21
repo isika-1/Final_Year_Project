@@ -63,6 +63,10 @@
     padding-left: 0.5rem;
 }
 
+.search-list-author-det {
+    margin: 5px 0px;
+}
+
 .search-list-container :nth-child(1) {
     border-top: none;
 }

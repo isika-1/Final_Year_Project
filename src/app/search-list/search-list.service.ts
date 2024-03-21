@@ -1,18 +1,35 @@
-import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { Author } from 'src/model/author.model';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class SearchListService {
-    public commonUrl: string = '../../assets/mock-data/';
+    public apiURL: string = 'https://final-year-project-backend-pi.vercel.app/author';
     public authorId: string = '';
     public personalDetails: any = {};
     
-    
     constructor(private http: HttpClient) {}
 
-    async getAuthorListByName(url: string) {
+    private handleError(error: HttpErrorResponse) {
+        if (error.status === 0) {
+            console.error('An error occurred:', error.error);
+        } 
+        else {
+            console.error(`Backend returned code ${error.status}, body was: `, error.error);
+        }
+        return throwError(() => new Error('Something bad happened; please try again later.'));
+    }
+
+    async getAuthorListByName(name: string) {
         try {
-            const response = await this.http.get(url).toPromise();
+            var body: any = { "name": name };
+            const response = await this.http.post<Author[]>(this.apiURL, {observe: body}).pipe(
+                catchError(this.handleError)
+            ).subscribe();
             return response;
         } 
         catch (error) {

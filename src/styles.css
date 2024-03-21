@@ -8,5 +8,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-sort-header-arrow {
     color: #fff !important;
     opacity: 1 !important;
-    margin-right: 10px !important;
+    margin: 0px 10px !important;
+}
+.mat-sort-header-content {
+    display: inline-block !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    margin-left: 5px !important;
+    width: 80% !important;
 }
